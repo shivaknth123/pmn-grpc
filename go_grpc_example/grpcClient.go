@@ -59,7 +59,7 @@ func main() {
 func GetAccessAndMobilitySubscription() *models.AccessAndMobilitySubscriptionData {
         var gpsisValue = []string{"Client", "Magma"}
         var dSingleNssai = []DefaultSingleNssais{{Sst: 1, Sd: "0002"}, {Sst: 2, Sd: "003"}}
-        var supportedFeature = "5G core"
+        var supportedFeature = "6G core"
         ambrval := Subs_ambr{"200 Mbps", "100 Mbps"}
         defaultNssaiData := []*models.Snssai{}
         for _, value := range dSingleNssai {
