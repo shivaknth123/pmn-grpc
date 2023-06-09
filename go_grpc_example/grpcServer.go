@@ -43,6 +43,8 @@ func main() {
         if err != nil {
                 log.Fatalf("Error %v", err)
         }
+        
+        fmt.Println("docker----")
         fmt.Printf("Server is listening on %v ...", address)
 
         s := grpc.NewServer()
