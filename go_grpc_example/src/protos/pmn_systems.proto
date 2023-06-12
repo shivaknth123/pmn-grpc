@@ -5,6 +5,7 @@ package go_package.protos;
 option go_package = "go_package/protos";
 
 import "models/access_and_mobility_subscription_data.proto";
+import "models/sms_management_subscription_data.proto";
 
 message Void {
 
@@ -14,7 +15,8 @@ message Void {
 // User subscription record. This record is serialized and stored in the DB.
 // --------------------------------------------------------------------------
 message PMNSubscriberData {
-    AccessAndMobilitySubscriptionData amsd = 1;  
+    AccessAndMobilitySubscriptionData amsd = 1;
+    SmsManagementSubscriptionData smsd = 5466;  
 }
 
 service PMNSubscriberService {
