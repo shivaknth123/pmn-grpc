@@ -43,9 +43,9 @@ func main() {
 	client := protos.NewPMNSubscriberConfigServicerClient(cc)
 	//request := PMNConverter()
 	request := &protos.PMNSubscriberData{
-		Am1:             GetAccessAndMobilitySubscription(),
-		AuthSubsData:    GetAuthenticationSubscription(),
-		SmsMangSubsData: GetSmsManagSubscription(),
+		Am1:          GetAccessAndMobilitySubscription(),
+		AuthSubsData: GetAuthenticationSubscription(),
+		SmsMngData:   GetSmsManagSubscription(),
 	}
 	client.PMNSubscriberConfig(context.Background(), request)
 }
